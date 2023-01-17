@@ -69,8 +69,16 @@ public class MatrixThread {
        for (int i = 0; i < 10; i++)
        {
            t[i].join();
-           System.out.println("The values for the multiplication are: " + finalMatrix[i]);
-
        }
+
+       for (int i = 0; i  < 100; i++)
+       {
+           for (int j = 0; j < 100; j++)
+           {
+               System.out.print(finalMatrix[i][j] + " \n");
+           }
+           System.out.println(" ");
+       }
+
     }
 }
